@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fdf7f3;
+    font-family: 'Jost', sans-serif;
+}
+
+text,h4{
+    display: block;
+    font-size: 25pt;
+    font-family: 'Jost', cursive;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #6d4c3d;
+}
+
+
+#acts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    padding: 20px 40px;
+    margin-bottom: 40px;
+}
+
+
+.act-box {
+    flex: 0 0 calc(50% - 32px);
+    max-width: calc(50% - 32px);
+    background-color: #fff6ed;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+}
+
+.act-box h3 {
+    font-size: 18pt;
+    font-family: 'Christopher', cursive;
+    color: #754f3b;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+
+.act-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13pt;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.act-table thead {
+    background-color: #fbe2d1;
+    color: #5a3a2b;
+    text-align: left;
+}
+
+.act-table th, .act-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f3d1bc;
+}
+
+.act-table tbody tr:hover {
+    background-color: #fff1e8;
+}
+
+.act-summary {
+    background-color: #f6d9c4;
+    font-weight: bold;
+    border-top: 2px solid #e2b89d;
+}
+
+.act-summary td {
+    padding-top: 12px;
+    border-bottom: none;
+}
+
+
+section:last-of-type {
+    background-color: #fff3e8;
+    padding: 24px 40px;
+    border-radius: 14px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    width: 70%;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16pt;
+    font-family: 'Jost', cursive;
+    color: #6b4a38;
+    margin: 12px 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+.print-icon {
+    margin-left: 12px;
+    font-size: 14pt;
+    cursor: pointer;
+    color: #774e3c;
+    transition: transform 0.2s ease;
+}
+
+.print-icon:hover {
+    transform: scale(1.2);
+    color: #a95e3f;
+}

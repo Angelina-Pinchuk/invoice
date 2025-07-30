@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сводный отчёт по актам</title>
+  <link rel="stylesheet" href="print.css">
+  <link rel="icon" type="image/jpg" sizes="100x100" href="iconic.jpg">
+  <script src="print.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>Сводный отчёт по актам</h1>
+  <p>Счёт-фактура № <span id="invoice-number">…</span> от <span id="invoice-date">…</span> (оплачено <span id="invoice-pDate">…</span>)</p>
+</header>
+
+<main>
+  <section id="acts-print">
+
+  </section>
+
+  <footer>
+    <div class="summary">
+      <h3>Общий итог</h3>
+      <p>Всего списано: <strong id="total-count">0</strong> шт</p>
+      <p>На сумму: <strong id="total-sum">0.00</strong> €</p>
+    </div>
+    <button onclick="window.print()">🖨️ Печать</button>
+  </footer>
+</main>
+</body>
+</html>

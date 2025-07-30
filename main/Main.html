@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="icon" type="image/webp" sizes="64x64" href="diploma.webp">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Счёт-фактуры</h1>
+        <p>Выберите уже существующие счёт-фактуры или создайте новую !</p>
+        <section id="create">
+            <h2>Выберите счёт-фактуру из списка</h2>
+            <form>
+                <select name="count" id="count">
+                    <option value="Счёт-фактура" selected>Счёт-фактура</option>
+                </select>
+                <input id="open" class="but" type="button" value="Открыть">
+            </form>
+        </section>
+        <section>
+            <button class="but" id="new">Создать новую</button>
+        </section>
+        <section>
+            <div class="popup hidden" id="popup">
+                <div class="popup-content">
+                    <h2>Новая счёт-фактура</h2>
+                    <form id="invoice-form">
+                        <label for="number">Номер:
+                            <input id="number" type="text" name="number" required>
+                        </label>
+                        <label for="date">Дата:
+                            <input id="date" type="date" name="date" required>
+                        </label>
+                        <label for="date-paid">Дата оплаты:
+                            <input id="date-paid" type="date" name="datepay" required>
+                        </label>
+                        <button class="but" type="submit">Создать</button>
+                        <button class="but" type="button" id="close-popup">Отмена</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h2 style="justify-self: center;">Загрузка данных</h2>
+            <p>Этот раздел нужен для выгрузки или загрузки данных, в случае, если надо поделиться данными с другими пользователями !</p>
+            <div class="data-buttons">
+                <button id="download-json">📤 Скачать данные</button>
+                <label for="import-json" class="custom-upload">📥 Загрузить данные</label>
+                <input type="file" id="import-json" accept=".json" style="display: none;">
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
